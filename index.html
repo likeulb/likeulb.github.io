@@ -51,15 +51,15 @@
 
 
 
-<meta name="description" content="测试测试测试">
+<meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Velvet of darkness">
+<meta property="og:title" content="Just my little world">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Velvet of darkness">
-<meta property="og:description" content="测试测试测试">
+<meta property="og:site_name" content="Just my little world">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Velvet of darkness">
-<meta name="twitter:description" content="测试测试测试">
+<meta name="twitter:title" content="Just my little world">
+<meta name="twitter:description">
 
 
 
@@ -71,7 +71,7 @@
   };
 </script>
 
-  <title> Velvet of darkness </title>
+  <title> Just my little world </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -104,7 +104,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Velvet of darkness</span>
+      <span class="site-title">Just my little world</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -210,6 +210,115 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/17/facebook面经/" itemprop="url">
+                  facebook面经
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-17T16:22:44-07:00" content="2016-03-17">
+              2016-03-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/努力上进/" itemprop="url" rel="index">
+                    <span itemprop="name">努力上进</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/17/facebook面经/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/17/facebook面经/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <p>这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。</p>
+<p>一轮电话，是位中国小哥，问的问题是比较典型的coin changing。即给一串类似[1，2，5，7]的数组作为coin的面值，让生成给定target面额的所有coin组合。比如target=4, 就返回[1,1,1,1],[1,1,2],[2,2]。其实就是combination sum的问题。第二个问题是leetcode原题159（longest substring with at most two distinct characters）</p>
+<p>on site才三轮，其中有一轮还是behavior，实在让我不知该说什么。但至少让我体会到了facebook人说话做事雷厉风行，move fast的作风。</p>
+<p>第一轮是位白人大伯，伦敦腔，说话很快很捉急，搞得我的情绪也被调动得有些high。他说他可能会随时制止我，因为他想在有限的时间内捕捉尽可能多的signal。然后就先讨论了一下anagram, 然后他的问题是引申的anagram。即给一个包含很多word的dictionary, 再给一个string由几个word组成, 问从dictionary里找出哪些word，可以组成这个string的anagram。题目麻烦的地方是，string是由word组成的，比如ab c, 你可以用bc a或是a b c或是cb a等等。他帮忙继续简化问题，即可以先对dictionary进行filter,把那些肯定不能用的单词去掉。然后就让写了个subfunction, input是两个string(s,t)，如果s包含t,返回true。 这里的包含仅仅指t的所有字符在s里都有，比如abcd包含cb，但不包含cbb。这个可以通过统计s里字符的个数，然后再扫一遍t来解决，倒不是很难。后面的解决过程就随意聊了一下，用backtracking, 每次从dictionary里取一个word, 然后到最后看是不是能组成给定的string或是无法再继续取word。第二个问题是平面上给定四个点，如何判断它们能组成一个正方形。感觉就是个数学问题，也没让写code, 说了个最简单的，然后他blabla说了好几种其他方法。比如四边相等且对角线相等，用向量表示一条边看它往某个方向转90度是不是能都能touch到两个点，等等。</p>
+<p>第二轮是个中国帅小哥，就比较放水了。问的是leetcode原是，binary tree的serialization和de-serialization. follow up问了点如果treenode上是string怎么办，复杂度是多少，如果是个bit array怎么办之类的。</p>
+<p>第三轮behavior, 一位娶了中国太太的老美，还认得zju说是很好的大学。然而攀点关系的我还是没过。就在那扯啊扯的，最后只写了一个很简单的用hashmap怎么弄了一下的问题。</p>
+<p>就这么结束了。然后那天是什么university day,另外来的都是面试intern的，他们就一轮。然后就是参观整个office。印象挺深的就是facebook还帮忙洗衣服。。。然后还有一些小房间可以随便躲进去，还有按摩椅什么的。然后氛围是非常年轻和活跃的，虽然有些人可能看起来年纪大一点，但一开始说话就特别有神采的样子。facebook的culture是move fast和注重个人的contribution。听说压力会有一些，但确实是一个让人感觉生机勃勃的地方。相比较而言，google就显得成熟稳重一些了。</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/02/29/找工作进行时/" itemprop="url">
                   找工作进行时
                 </a>
@@ -272,40 +381,39 @@
             
               <p>想起某篇文章的标题，大意是如果你想做成什么事，就别急着发朋友圈。或许这种如何努力，如何单调生活不适合在朋友圈上刷存在感，那么就淡定点，就让自己默默感受这个或许有点艰辛但回忆起来还是挺美好的过程吧。</p>
 <p>9月份实习之后，开心地回了趟国，回美帝后就发现刷过的题都忘得差不多了，然后又赶上号称形势不那么好的一年，对于我这个转专业，基础又一般般的来说，确实不容乐观。狂刷两周面经，还是华丽丽地挂了几个公司。然后似乎便错过了最好的时间段。12月份基本上没有什么进展，做几个OA，然后要么没下文，要么处理得非常缓慢。特意找了级别比较高的人内推，还是收到了not moving forward的邮件。</p>
-<p>还好年初的时候，很多公司又陆续开始校园招聘了，然后就发现有更多的公司在招intern。那就继续刷题，继续面试吧。我不是大牛，也没想过拿一拨offer，只是在lg的push下和鼓励下，拿到了比较满意的offer。</p>
+<p>还好年初的时候，很多公司又陆续开始校园招聘了，然后就发现有更多的公司在招intern。那就继续刷题，继续面试吧。我不是大牛，也没想过拿一拨offer，只是在lg的push和鼓励下，拿到了比较满意的offer。</p>
 <p>下面就是自己的一点小经验和小感悟吧。</p>
 <h2 id="Timeline">Timeline</h2><ul>
 <li>找工作的timing真的很重要，对我来说，大概3月份左右开始找intern, 4月份拿到intern offer已经很晚了。其实1月份开始就可以积极投intern了，当然有些更牛的人可能是下半年就有实习offer了，所以说，早投真没什么坏处。</li>
-<li>而找full time更是越早越好，有些公司还有冷冻期。如果早点面，6个月后还没毕业还能再尝试一次，又有什么不好呢。况且的况且，如果只是通过网上海投，处理时间真的很难预料，尤其那些比较热门的大公司。full time的招人高峰期应该就在9-11月，春季的时候也有一些。</li>
-<li>很多人可能会担心自己还没准备好，不想贸然去投，但这样很可能就错过了最好的申请时间，影响可能更大。在面试过程中积累实战经验也是很有效的提高方法。</li>
+<li>而找full time的招人高峰期应该就在9-11月，春季的时候也有一些。年底的headcount就很少了。其实可以早点投简历，如果过了电话，可以安排一个自己认为可以接受的时间，好好准备。像我之前3月份投了amazon full time, 到了6月份才联系我OA, 如果没有人内推，这个时间真的很难说。</li>
 </ul>
 <h2 id="前期准备">前期准备</h2><h3 id="简历">简历</h3><ul>
-<li>简历可以多找朋友或是比自己有经验的人改改，多一个人看看总能多一些想法。比如可以加上一些显得fancy一点的描述，可以把一个普通的project写成实现了某某system。当然，加一些数据会显得更有说服力，而句子要尽量言简意赅。一些关键词，比如掌握了某种技术，某种framework，也可以一下子被注意到。</li>
+<li>简历可以多找朋友或是比自己有经验的人改改，多一个人看看总能多一些想法。比如可以加上一些显得fancy一点的描述，加一些数据会显得更有说服力，而句子要尽量言简意赅。一些关键词，比如掌握了某种技术，某种framework，也可以一下子被注意到。</li>
 <li>改简历的过程其实也是加深自我认识的过程，当你对简历上每一条都清晰明了的时候，会有更多信心应对简历相关的任何问题。</li>
 <li>投简历的途径，首选便是找人内推。其次是参加学校CS的career fair，但那种general的career fair就不那么推荐了。我还没尝试过直接在linkedin上找recruiter，听说也是不错的方法。最其次的方法便是网申，当然大牛应该在哪都被人哄抢吧。</li>
 </ul>
 <h3 id="刷题">刷题</h3><ul>
-<li>对于转专业的我来说，多年前的C, C++已经忘得差不多了。相当于从0开始学Java, 上algorithm。 在leetcode上刷题确实帮助很大，一方面运气好的时候经常能碰到leetcode原题，同时，讨论区也总有一些很巧妙的解法可以好好学习，更重要的是这个过程培养了一些解决问题的思路。至少在碰到新题时，不会毫无头绪，会尝试将它转化成之前见过的问题。同时在这个过程中，也加深了解了某些看似基础的data structure和algorithm。</li>
+<li>对于转专业的我来说，多年前的C, C++已经忘得差不多了。相当于从0开始学Java, 上algorithm。 在leetcode上刷题确实帮助很大，一方面运气好的时候经常能碰到leetcode原题。另外，讨论区也总有一些很巧妙的解法可以好好学习，更重要的是这个过程培养了一些解决问题的思路。至少在碰到新题时，不会毫无头绪，会尝试将它转化成之前见过的问题。除此之外，在刷题的过程中，也更加了解了某些看似基础的data structure和algorithm。</li>
 <li>不过，刷leetcode要适时做一些总结，否则很容易刷完后面的就忘了前面的。可以将相似的问题放在一起多做比较，时不时翻出来想想为什么这么做。</li>
 </ul>
-<h3 id="面经">面经</h3><p>当把leetcode刷熟练后，除了每天保持一定的刷题量，收效最大的就是看近期的面经了。一亩三分地上的面经版，很棒，有很多很新的面经，而且会发现有些题确实反复出现过。如果有时间，最好可以把自己不是完全有把握的题都写一遍，如果真正面试的时候碰到，就赚大了。同时，去论坛上看大家的面试经历是一种学习，更是一种激励，当发现大家都开始on site了，自己简历还没有消息，那就肯定要加倍努力了。</p>
+<h3 id="面经">面经</h3><p>当把leetcode刷熟练后，除了每天保持一定的刷题量，收效最大的就是看近期的面经了。一亩三分地上的面经版，很棒，有很多很新的面经，而且会发现有些题确实反复出现过。如果有时间，最好可以把自己不是完全有把握的题都写一遍，如果真正面试的时候碰到，就赚大了。同时，去论坛上看大家的面试经历也是一种学习，更是一种激励，当发现大家都开始on site了，自己简历还没有消息，那就肯定要加倍努力了。</p>
 <h2 id="面试过程">面试过程</h2><h3 id="知识储备">知识储备</h3><p>因为我都是申请general的SE职位，对于我面试过的公司来看，面试的问题基本上都是一些正常范围内data structure, algorithm, OO design, system design，CS基础的问题。我竟还没碰到过让写multi-thread，或是让处理concurrency，算比较幸运吧。</p>
 <ul>
 <li>data structure: array, linkedlist, tree, graph, queue, stack, hashmap, hashset, heap， adjacency list, adjacency matrix等是最简单的，复杂点的比如Trie, segment tree, binary indexed tree, quad tree, surffix tree, AVL tree, RB tree等，主要前面三个leetcode都有用到，要会写。</li>
 <li>algorithm，列几个感觉碰到比较多的：<ol>
 <li>sorting: quick sort, merge sort, bucket sort</li>
 <li>searching: binary search</li>
-<li>dfs, bfs, toplogical sorting, union find</li>
-<li>一些technique: divide conquer, dp, memorization, backtracking, recursion，两指针（如binary search时），左右两边受限的情况（如trapping rain water)</li>
+<li>dfs, bfs, toplogical sorting, union &amp; find</li>
 </ol>
 </li>
+<li>一些technique: divide conquer, dp, greedy, memorization, backtracking, recursion，两指针（如binary search时），左右两边受限的情况（如trapping rain water)</li>
 <li>OO design: 了解一些基础的design pattern, 多看看一些典型题，比如电梯，parking lot，CC150上有一大章讲OO design，可以好好研究下并进行总结。</li>
 <li>big data: <a href="http://blog.csdn.net/v_july_v/article/details/7382693" target="_blank" rel="external">这篇博文</a> 虽然名字浮夸了点，但基本上涵盖了很多大数据处理的想法，至少在碰到类似问题时会有一些思路。</li>
-<li>system design: 从一些典型题入手，了解相类似的架构，其实简单来说都是load balancer加n个server加n个storage，然后具体到Cache怎么加，怎么实现high performance, availability等等，可以看<a href="http://mp.weixin.qq.com/s?__biz=MzA5MzE4MjgyMw==&amp;mid=205599541&amp;idx=1&amp;sn=8f877c6ad91f6c7e19881a5ecadca5ce&amp;scene=5&amp;srcid=N35qt2X9NQFzU9WlkaQ7#rd" target="_blank" rel="external">这篇文章</a>。</li>
-<li>其他：虽然可能某些职位的描述里需要有某特定方面的经验技能，但实际考查时也没有完全focus在这方面。当然还要看具体公司的风格，大公司一般上更注重CS的基础知道，以及解决问题的思维思路。当然如果简历上强调自己某项特别突出的skill，就要准备好应对了。</li>
+<li>system design: 从一些典型题入手，了解相类似的架构，其实简单来说都是load balancer加n个server加n个storage，然后具体到Cache怎么加，怎么实现high performance, availability等等，可以看<a href="http://mp.weixin.qq.com/s?__biz=MzA5MzE4MjgyMw==&amp;mid=205599541&amp;idx=1&amp;sn=8f877c6ad91f6c7e19881a5ecadca5ce&amp;scene=5&amp;srcid=N35qt2X9NQFzU9WlkaQ7#rd" target="_blank" rel="external">这篇文章</a>进行一些准备。</li>
+<li>其他：虽然可能某些职位的描述里需要有某特定方面的经验技能，但实际考查时也没有完全focus在这方面。当然还要看具体公司的风格，大公司一般上更注重CS的基础知识，以及解决问题的思维思路。当然如果简历上强调自己某项特别突出的skill，就要准备好应对了。</li>
 </ul>
 <h3 id="面试交流">面试交流</h3><ul>
-<li>一般的IT公司面试流程都是非常专业的，面试官也都进行过相应的训练。他们会尽量让你放松，会适时引导你。我目前还没有碰到特别变态的面试官，最多就是脸上没什么表情，只是沉默地看着你一个人在那说或是写。所以尽量保持一个良好的心态，碰到难题，大家都一样，依然要努力尝试解决这个问题。</li>
+<li>一般的IT公司面试流程都是非常专业的，面试官也都进行过相应的训练。他们会尽量让你放松，会适时引导你。我目前还没有碰到过特别变态的面试官，最多就是脸上没什么表情，只是沉默地看着你一个人在那说或是写。所以尽量保持一个良好的心态，面试官都是很nice的。</li>
 <li>面试过程中的交流很重要，不要害怕说错什么，要适时表达你在想什么。要不然面试官无法了解你的思路，也无从判断你是不是真的会做这道题。像design类的题更加需要多交流，讨论具体的设计需求才能保证没有偏离面试官希望的轨道。大部分时候要按照面试官引导的方面走，尽量不要跟面试官进行对抗。</li>
 <li>如果一道code题知道怎么做，一般就说一下自己的思路，看面试官是否同意，然后再开始写。如果不同意，就要再讨论是不是要改进复杂度，是不是有些情况没有很好的处理到。如果这道题完全不知道怎么做，一般面试官会给一些提示或是进行一些简化，然后大胆地把自己的想法说出来，想到什么说什么。一般比较好的面试过程，就是给一个相当复杂的问题，从简化的小问题开始，在引导下一步步解决。</li>
 </ul>
@@ -565,14 +673,14 @@
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" src="/images/p1928776449.jpg" alt="likeulb" itemprop="image"/>
-          <p class="site-author-name" itemprop="name">likeulb</p>
+          <img class="site-author-image" src="/images/2.jpg" alt="padauk" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">padauk</p>
         </div>
-        <p class="site-description motion-element" itemprop="description">测试测试测试</p>
+        <p class="site-description motion-element" itemprop="description"></p>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -586,7 +694,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -626,7 +734,7 @@
   <span class="with-love">
     <i class="icon-next-heart fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">likeulb</span>
+  <span class="author" itemprop="copyrightHolder">padauk</span>
 </div>
 
 <div class="powered-by">
