@@ -51,19 +51,16 @@
 
 
 
-<meta name="description" content="这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。
-一轮电话，是位中国小哥，问的问题是比较典型的coin changing。即给一串类似[1，2，5，7]的数组作为coin的面值，让生成给定target面额的所有coin组合。比如target=4, 就返回[1,1,1,1],[1,1,2],[2,2]。其实">
+<meta name="description" content="这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="facebook面经">
 <meta property="og:url" content="http://yoursite.com/2016/03/17/facebook面经/index.html">
 <meta property="og:site_name" content="Just my little world">
-<meta property="og:description" content="这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。
-一轮电话，是位中国小哥，问的问题是比较典型的coin changing。即给一串类似[1，2，5，7]的数组作为coin的面值，让生成给定target面额的所有coin组合。比如target=4, 就返回[1,1,1,1],[1,1,2],[2,2]。其实">
-<meta property="og:updated_time" content="2016-03-21T03:49:03.000Z">
+<meta property="og:description" content="这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。">
+<meta property="og:updated_time" content="2016-04-05T20:07:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="facebook面经">
-<meta name="twitter:description" content="这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。
-一轮电话，是位中国小哥，问的问题是比较典型的coin changing。即给一串类似[1，2，5，7]的数组作为coin的面值，让生成给定target面额的所有coin组合。比如target=4, 就返回[1,1,1,1],[1,1,2],[2,2]。其实">
+<meta name="twitter:description" content="这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。">
 
 
 
@@ -261,6 +258,7 @@
 
       
         <span itemprop="articleBody"><p>这是一篇挂经，整个面试表现似乎没有太出彩的地方，要求写的code也不多，让人感觉怪怪的。又听说现在facebook bar很高，估计也正常吧。</p>
+<a id="more"></a>
 <p>一轮电话，是位中国小哥，问的问题是比较典型的coin changing。即给一串类似[1，2，5，7]的数组作为coin的面值，让生成给定target面额的所有coin组合。比如target=4, 就返回[1,1,1,1],[1,1,2],[2,2]。其实就是combination sum的问题。第二个问题是leetcode原题159（longest substring with at most two distinct characters）</p>
 <p>on site才三轮，其中有一轮还是behavior，实在让我不知该说什么。但至少让我体会到了facebook人说话做事雷厉风行，move fast的作风。</p>
 <p>第一轮是位白人大伯，伦敦腔，说话很快很捉急，搞得我的情绪也被调动得有些high。他说他可能会随时制止我，因为他想在有限的时间内捕捉尽可能多的signal。然后就先讨论了一下anagram, 然后他的问题是引申的anagram。即给一个包含很多word的dictionary, 再给一个string由几个word组成, 问从dictionary里找出哪些word，可以组成这个string的anagram。题目麻烦的地方是，string是由word组成的，比如ab c, 你可以用bc a或是a b c或是cb a等等。他帮忙继续简化问题，即可以先对dictionary进行filter,把那些肯定不能用的单词去掉。然后就让写了个subfunction, input是两个string(s,t)，如果s包含t,返回true。 这里的包含仅仅指t的所有字符在s里都有，比如abcd包含cb，但不包含cbb。这个可以通过统计s里字符的个数，然后再扫一遍t来解决，倒不是很难。后面的解决过程就随意聊了一下，用backtracking, 每次从dictionary里取一个word, 然后到最后看是不是能组成给定的string或是无法再继续取word。第二个问题是平面上给定四个点，如何判断它们能组成一个正方形。感觉就是个数学问题，也没让写code, 说了个最简单的，然后他blabla说了好几种其他方法。比如四边相等且对角线相等，用向量表示一条边看它往某个方向转90度是不是能都能touch到两个点，等等。</p>
@@ -291,6 +289,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/03/25/binary-search-总结/" rel="prev" title="binary search 小结">
+                binary search 小结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -369,7 +371,7 @@
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
